@@ -5,8 +5,9 @@ import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
 // Create a component 
+// Scrolling effect requires flex: 1 which tells it to give it as much space as it can
 const App = () => (
-  <View>
+  <View style={{ flex: 1 }}>
     <Header headerText={'Albums'}/>
     <AlbumList/>
   </View>  
